@@ -1,0 +1,46 @@
+@import "partials/Layout/layout.css";
+@import "partials/Header/header.css";
+@import "partials/Hero/hero.css";
+@import "partials/About/about.css";
+@import "partials/Trailer/trailer.css";
+@import "partials/Galery/galery.css";
+@import "partials/Poster/poster.css";
+@import "partials/Footer/footer.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+@font-face {
+  font-family: "Panda";
+  src: url("/assets/fonts/KungFuPandaRegular-xYjV.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */

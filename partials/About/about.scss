@@ -1,0 +1,97 @@
+.about-container {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/About_1440x1500_Background.jpg");
+    background-size: cover;
+
+    .about-content {
+        height: auto;
+        display: flex;
+
+        .bg-about {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .about-description {
+                margin: auto;
+                flex-wrap: wrap;
+                padding: 0px 60px 40px 60px;
+                width: 100%;
+                height: 100%;
+                max-width: 1080px;
+                padding-top: 24px;
+                margin-left: auto;
+                color: #fff;
+
+                h1 {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    color: #D19725;
+                    font-family: 'Panda';
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                .credits {
+                    margin-top: 10px;
+
+                    div:first-child {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        svg {
+                            width: 26px;
+                        }
+                    }
+
+                    h4 {
+                        padding: 25px 0 25px 0;
+                    }
+
+                    h5 {
+                        font-size: 14px;
+                    }
+
+                    .cast {
+                        margin-bottom: 18px;
+                        line-height: 18px;
+                    }
+
+                    .crew {
+                        margin-bottom: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+
+        .bg-image {
+            background-image: url("/assets/kung-fu-panda-4-about.jpg");
+            width: 50%;
+            min-height: 900px;
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .about-content {
+            flex-direction: column-reverse;
+
+            .bg-image {
+                background-image: url("/assets/kung-fu-panda-4-about-mobile2.jpg");
+                width: 100%;
+                min-height: 400px;
+
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}

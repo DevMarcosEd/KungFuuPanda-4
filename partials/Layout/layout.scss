@@ -1,0 +1,23 @@
+.background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 98vh;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(109deg, rgba(10, 12, 16, 0.70) 0%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.70) 100%);
+        z-index: 1;
+        /* Ajuste a ordem conforme necessário */
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

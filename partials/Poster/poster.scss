@@ -1,0 +1,69 @@
+.poster-container {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    background: url("/assets/Poster_Background.jpg");
+    background-size: cover;
+
+    h1 {
+        position: absolute;
+        font-family: 'Panda';
+        color: #D19725;
+        font-size: 26px;
+        top: 0;
+        padding: 40px 0px 0px 60px;
+    }
+
+    .poster-image {
+        position: absolute;
+        width: 100%;
+        max-width: 232px;
+        height: 370px;
+        background-image: url("/assets/kung-fu-panda-4-poster.jpg");
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s ease;
+
+        &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: 0.3s;
+
+            &:hover {
+                backdrop-filter: blur(2px);
+            }
+        }
+
+        .search {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                color: #fff;
+                font-size: 30px;
+                z-index: 555;
+                opacity: 0;
+                /* Começa com opacidade 0 */
+                transition: opacity 0.5s ease;
+                /* Adiciona transição de opacidade */
+            }
+        }
+
+        &:hover .search i {
+            opacity: 1;
+            /* Torna visível e aumenta a opacidade no hover */
+        }
+    }
+}
